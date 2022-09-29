@@ -1,5 +1,5 @@
 <?php
-// Blog extension, https://github.com/datenstrom/yellow-extensions/tree/master/source/blog
+// Blog extension, https://github.com/annaesvensson/yellow-blog
 
 class YellowBlog {
     const VERSION = "0.8.19";
