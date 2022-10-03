@@ -146,4 +146,4 @@ Följande inställningar kan konfigureras i filen `system/extensions/yellow-syst
 
 ## Utvecklare
 
-Datenstrom. [Få hjälp](https://datenstrom.se/sv/yellow/help/).
+Anna Svensson. [Få hjälp](https://datenstrom.se/sv/yellow/help/).
