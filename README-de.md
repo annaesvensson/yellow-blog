@@ -6,6 +6,10 @@ Blog für deine Webseite.
 
 <p align="center"><img src="blog-screenshot.png?raw=true" alt="Bildschirmfoto"></p>
 
+## Wie man eine Erweiterung installiert
+
+[ZIP-Datei herunterladen](https://github.com/annaesvensson/yellow-blog/archive/main.zip) und in dein `system/extensions`-Verzeichnis kopieren. [Weitere Informationen zu Erweiterungen](https://github.com/annaesvensson/yellow-update/tree/main/README-de.md).
+
 ## Wie man ein Blog benutzt
 
 Das Blog ist auf deiner Webseite vorhanden als `http://website/blog/`. Um das Blog auf der Startseite anzuzeigen, gehe in dein `content`-Verzeichnis und lösche das `1-home`-Verzeichnis. Um eine neue Blogseite hinzuzufügen, erstelle eine neue Datei im Blogverzeichnis. Ganz oben auf einer Seite kannst du `Published` und andere [Seiteneinstellungen](https://github.com/annaesvensson/yellow-core/tree/main/README-de.md#einstellungen-seite) festlegen. Das Veröffentlichungsdatum wird zur Sortierung der Blogseiten verwendet. Mit `Tag` kann man ähnliche Seiten gruppieren. Du kannst `[--more--]` benutzen, um an der gewünschten Stelle einen Seitenumbruch zu erzeugen.
@@ -139,10 +143,6 @@ Die folgenden Einstellungen können in der Datei `system/extensions/yellow-syste
 `content/shared/page-new-blog.md` = Inhaltsdatei für neue Blogseite  
 `system/layouts/blog.html` = Layoutdatei für individuelle Blogseite  
 `system/layouts/blog-start.html` = Layoutdatei für die Blogstartseite  
-
-## Installation
-
-[Erweiterung herunterladen](https://github.com/annaesvensson/yellow-blog/archive/main.zip) und die ZIP-Datei in dein `system/extensions`-Verzeichnis kopieren. [Weitere Informationen zu Erweiterungen](https://github.com/annaesvensson/yellow-update/tree/main/README-de.md).
 
 ## Entwickler
 

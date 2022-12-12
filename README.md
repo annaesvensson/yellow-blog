@@ -6,6 +6,10 @@ Blog for your website.
 
 <p align="center"><img src="blog-screenshot.png?raw=true" alt="Screenshot"></p>
 
+## How to install an extension
+
+[Download ZIP file](https://github.com/annaesvensson/yellow-blog/archive/main.zip) and copy it into your `system/extensions` folder. [Learn more about extensions](https://github.com/annaesvensson/yellow-update).
+
 ## How to use a blog
 
 The blog is available on your website as `http://website/blog/`. To show the blog on the home page, go to your `content` folder and delete the `1-home` folder. To create a new blog page, add a new file to the blog folder. Set `Published` and other [page settings](https://github.com/annaesvensson/yellow-core#settings-page) at the top of a page. The publishing date will be used to sort blog pages. Use `Tag` to group similar pages together. You can use `[--more--]` to add a page break at the desired spot.
@@ -139,10 +143,6 @@ The following settings can be configured in file `system/extensions/yellow-syste
 `content/shared/page-new-blog.md` = content file for new blog page  
 `system/layouts/blog.html` = layout file for individual blog page  
 `system/layouts/blog-start.html` = layout file for blog start page  
-
-## Installation
-
-[Download extension](https://github.com/annaesvensson/yellow-blog/archive/main.zip) and copy ZIP file into your `system/extensions` folder. [Learn more about extensions](https://github.com/annaesvensson/yellow-update).
 
 ## Developer
 

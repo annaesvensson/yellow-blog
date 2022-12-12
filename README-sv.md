@@ -6,6 +6,10 @@ Blogg för din webbplats
 
 <p align="center"><img src="blog-screenshot.png?raw=true" alt="Skärmdump"></p>
 
+## Hur man installerar ett tillägg
+
+[Ladda ner ZIP-filen](https://github.com/annaesvensson/yellow-blog/archive/main.zip) och kopiera den till din `system/extensions` mapp. [Läs mer om tillägg](https://github.com/annaesvensson/yellow-update/tree/main/README-sv.md).
+
 ## Hur man använder en blogg
 
 Bloggen finns tillgänglig på din webbplats som `http://website/blog/` För att visa bloggen på startsidan, gå till din `content` mapp och ta bort `1-home` mappen. För att skapa en ny bloggsida, lägg till en ny fil i blogg-mappen. Ställ in `Published` och andra [sidinställningar](https://github.com/annaesvensson/yellow-core/tree/main/README-sv.md#inställningar-page) högst upp på en sida. Publiceringsdatum kommer att användas för att sortera bloggsidor. Använd `Tag` för att gruppera liknande sidor. Du kan använda `[--more--]` för att lägga till en sidbrytning på önskad plats.
@@ -139,10 +143,6 @@ Följande inställningar kan konfigureras i filen `system/extensions/yellow-syst
 `content/shared/page-new-blog.md` = innehållsfil för ny bloggsida  
 `system/layouts/blog.html` = layoutfil för enskild bloggsida  
 `system/layouts/blog-start.html` = layoutfil för bloggstartsida  
-
-## Installation
-
-[Ladda ner tillägg](https://github.com/annaesvensson/yellow-blog/archive/main.zip) och kopiera ZIP-fil till din `system/extensions` mapp. [Läs mer om tillägg](https://github.com/annaesvensson/yellow-update/tree/main/README-sv.md).
 
 ## Utvecklare
 
