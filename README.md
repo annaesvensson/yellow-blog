@@ -12,7 +12,11 @@ Blog for your website.
 
 ## How to use a blog
 
-The blog is available on your website as `http://website/blog/`. To show the blog on the home page, go to your `content` folder and delete the `1-home` folder. To create a new blog page, add a new file to the blog folder. Set `Published` and other [page settings](https://github.com/annaesvensson/yellow-core#settings-page) at the top of a page. The publishing date will be used to sort blog pages. Use `Tag` to group similar pages together. You can use `[--more--]` to add a page break at the desired spot.
+The blog is available on your website as `http://website/blog/`. To create a new blog page, add a new file to the blog folder. Set `Published` and other [page settings](https://github.com/annaesvensson/yellow-core#settings-page) at the top of a page. Dates should be written in the format YYYY-MM-DD. The publishing date will be used to sort blog pages. Use `Tag` to group similar pages together. You can use `[--more--]` to add a page break at the desired spot.
+
+## How to edit a blog
+
+If you want to edit blog pages in a [web browser](https://github.com/annaesvensson/yellow-edit), you can do this on your website at `http://website/edit/blog/`. If you want to edit blog pages on your [computer](https://github.com/annaesvensson/yellow-core), have a look inside your `content/2-blog` folder. Give it a try.
 
 ## How to show blog information
 
@@ -113,7 +117,17 @@ Showing links to blog:
     [See pages about coffee](/blog/tag:coffee/)
     [See pages with examples](/blog/tag:example/)
 
-Configuring blog start page in the settings, URL with subfolder for each year:
+Configuring blog address in the settings, URL is automatically detected:
+
+    BlogStartLocation: auto
+    BlogNewLocation: @title
+
+Configuring blog address in the settings, URL with publishing date:
+
+    BlogStartLocation: /blog/
+    BlogNewLocation: /blog/@date/@title
+
+Configuring blog address in the settings, URL with subfolder for each year:
 
     BlogStartLocation: /blog/
     BlogNewLocation: /blog/@year/@title

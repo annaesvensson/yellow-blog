@@ -12,7 +12,11 @@ Blog für deine Webseite.
 
 ## Wie man ein Blog benutzt
 
-Das Blog ist auf deiner Webseite vorhanden als `http://website/blog/`. Um das Blog auf der Startseite anzuzeigen, gehe in dein `content`-Verzeichnis und lösche das `1-home`-Verzeichnis. Um eine neue Blogseite hinzuzufügen, erstelle eine neue Datei im Blogverzeichnis. Ganz oben auf einer Seite kannst du `Published` und andere [Seiteneinstellungen](https://github.com/annaesvensson/yellow-core/tree/main/README-de.md#einstellungen-seite) festlegen. Das Veröffentlichungsdatum wird zur Sortierung der Blogseiten verwendet. Mit `Tag` kann man ähnliche Seiten gruppieren. Du kannst `[--more--]` benutzen, um an der gewünschten Stelle einen Seitenumbruch zu erzeugen.
+Das Blog ist auf deiner Webseite vorhanden als `http://website/blog/`. Um eine neue Blogseite hinzuzufügen, erstelle eine neue Datei im Blogverzeichnis. Ganz oben auf einer Seite kannst du `Published` und andere [Seiteneinstellungen](https://github.com/annaesvensson/yellow-core/tree/main/README-de.md#einstellungen-seite) festlegen. Datumsangaben erfolgen im Format JJJJ-MM-TT. Das Veröffentlichungsdatum wird zur Sortierung der Blogseiten verwendet. Mit `Tag` kann man ähnliche Seiten gruppieren. Du kannst `[--more--]` benutzen, um an der gewünschten Stelle einen Seitenumbruch zu erzeugen.
+
+## Wie man ein Blog bearbeitet
+
+Falls du Blogseiten im [Webbrowser](https://github.com/annaesvensson/yellow-edit/tree/main/README-de.md) bearbeiten möchtest, kannst du das auf deiner Webseite machen unter `http://website/edit/blog/`. Falls du Blogseiten auf deinem [Computer](https://github.com/annaesvensson/yellow-core/tree/main/README-de.md) bearbeiten möchtest, schau dir das `content/2-blog`-Verzeichnis an. Probier es einfach mal aus.
 
 ## Wie man Bloginformationen anzeigt
 
@@ -113,7 +117,17 @@ Links zum Blog anzeigen:
     [Siehe Seiten über Kaffee](/blog/tag:kaffee/)
     [Siehe Seiten mit Beispielen](/blog/tag:beispiel/)
 
-Blogstartseite in den Einstellungen festlegen, URL mit Unterverzeichnis für jedes Jahr:
+Blogadresse in den Einstellungen festlegen, URL wird automatisch erkannt:
+
+    BlogStartLocation: auto
+    BlogNewLocation: @title
+
+Blogadresse in den Einstellungen festlegen, URL mit Veröffentlichungsdatum:
+
+    BlogStartLocation: /blog/
+    BlogNewLocation: /blog/@date/@title
+
+Blogadresse in den Einstellungen festlegen, URL mit Unterverzeichnis für jedes Jahr:
 
     BlogStartLocation: /blog/
     BlogNewLocation: /blog/@year/@title

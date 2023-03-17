@@ -12,7 +12,11 @@ Blogg för din webbplats
 
 ## Hur man använder en blogg
 
-Bloggen finns tillgänglig på din webbplats som `http://website/blog/`. För att visa bloggen på startsidan, gå till din `content` mapp och ta bort `1-home` mappen. För att skapa en ny bloggsida, lägg till en ny fil i blogg-mappen. Ställ in `Published` och andra [sidinställningar](https://github.com/annaesvensson/yellow-core/tree/main/README-sv.md#inställningar-page) högst upp på en sida. Publiceringsdatum kommer att användas för att sortera bloggsidor. Använd `Tag` för att gruppera liknande sidor. Du kan använda `[--more--]` för att lägga till en sidbrytning på önskad plats.
+Bloggen finns tillgänglig på din webbplats som `http://website/blog/`. För att skapa en ny bloggsida, lägg till en ny fil i blogg-mappen. Ställ in `Published` och andra [sidinställningar](https://github.com/annaesvensson/yellow-core/tree/main/README-sv.md#inställningar-page) högst upp på en sida. Datum ska skrivas i formatet ÅÅÅÅ-MM-DD. Publiceringsdatum kommer att användas för att sortera bloggsidor. Använd `Tag` för att gruppera liknande sidor. Du kan använda `[--more--]` för att lägga till en sidbrytning på önskad plats.
+
+## Hur man redigerar en blogg
+
+Om du vill redigera bloggsidor i en [webbläsare](https://github.com/annaesvensson/yellow-edit/tree/main/README-sv.md) kan du göra detta på din webbplats på `http://website/edit/blog/`. Om du vill redigera bloggsidor på din [dator](https://github.com/annaesvensson/yellow-core/tree/main/README-sv.md), ta en titt på `content/2-blog` mappen. Ge det ett försök.
 
 ## Hur man visar blogginformation
 
@@ -113,7 +117,17 @@ Visa länkar till bloggen:
     [Se sidor om kaffe](/blog/tag:kaffe/)
     [Se sidor med exempel](/blog/tag:exempel/)
 
-Konfigurera bloggstartsida i inställningar, URL med undermapp för varje år:
+Konfigurera bloggaddres i inställningar, URL identifieras automatiskt:
+
+    BlogStartLocation: auto
+    BlogNewLocation: @title
+
+Konfigurera bloggaddres i inställningar, URL med publiceringsdatum:
+
+    BlogStartLocation: /blog/
+    BlogNewLocation: /blog/@date/@title
+
+Konfigurera bloggaddres i inställningar, URL med undermapp för varje år:
 
     BlogStartLocation: /blog/
     BlogNewLocation: /blog/@year/@title
