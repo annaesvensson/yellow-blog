@@ -16,7 +16,7 @@ The blog is available on your website as `http://website/blog/`. To create a new
 
 ## How to edit a blog
 
-If you want to edit blog pages in a [web browser](https://github.com/annaesvensson/yellow-edit), you can do this on your website at `http://website/edit/blog/`. If you want to edit blog pages on your [computer](https://github.com/annaesvensson/yellow-core), have a look inside your `content/2-blog` folder. Give it a try.
+If you want to edit blog pages in a [web browser](https://github.com/annaesvensson/yellow-edit), you can do this on your website at `http://website/edit/blog/`. If you want to edit blog pages on your [computer](https://github.com/annaesvensson/yellow-core), have a look inside your `content/2-blog` folder. Here are some tips. Prefix and suffix are removed from the location, so that it looks better. The file `content/2-blog/2020-04-07-blog-example.md` is available on your website as `http://website/blog/blog-example`.
 
 ## How to show blog information
 
