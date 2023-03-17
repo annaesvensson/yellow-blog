@@ -1,6 +1,6 @@
 <p align="right"><a href="README-de.md">Deutsch</a> &nbsp; <a href="README.md">English</a> &nbsp; <a href="README-sv.md">Svenska</a></p>
 
-# Blog 0.8.23
+# Blog 0.8.24
 
 Blog für deine Webseite.
 
@@ -26,15 +26,13 @@ Du kannst Abkürzungen verwenden, um Informationen über das Blog anzuzeigen:
 `[blogtags]` für eine Liste der Tags  
 `[blogyears]` für eine Liste der Jahre  
 `[blogmonths]` für eine Liste der Monate  
-`[blogrelated]` für eine Liste von Seiten, ähnlich zur aktuellen Seite  
-`[blogpages]` für eine Liste von Seiten, alphabetische Reihenfolge  
-`[blogchanges]` für eine Liste von Seiten, veröffentlichte Reihenfolge  
+`[blogpages]` für eine Liste von Seiten, veröffentlichte Reihenfolge  
 
-Die folgenden Argumente sind verfügbar, alle bis auf das erste Argument sind optional:
+Die folgenden Argumente sind verfügbar:
 
-`StartLocation` = Ort der Blogstartseite  
+`StartLocation` = Ort der Blogstartseite, `auto` für automatische Erkennung  
 `EntriesMax` = Anzahl der Einträge pro Abkürzung, 0 für unbegrenzt  
-`FilterTag` = Seiten mit bestimmten Tag anzeigen, nur bei `[blogpages]` oder `[blogchanges]`  
+`FilterTag` = Seiten mit bestimmten Tag anzeigen, nur bei `[blogpages]`  
 
 ## Beispiele
 
@@ -77,37 +75,25 @@ Inhaltsdatei mit Bloginformationen:
     ---
     Title: Übersicht
     ---
-    ## Jahre
+    ## Seiten
 
-    [blogyears /blog/ 0]
+    [blogpages]
 
     ## Tags
 
-    [blogtags /blog/ 0]
+    [blogtags]
 
-Liste mit Seiten anzeigen, alphabetische Reihenfolge:
+Liste mit Seiten anzeigen, unterschiedliche Anzahl Einträge:
 
     [blogpages /blog/ 0]
     [blogpages /blog/ 3]
     [blogpages /blog/ 10]
 
-Liste mit Seiten anzeigen, alphabetische Reihenfolge mit einem bestimmten Tag:
+Liste mit Seiten anzeigen, mit einem bestimmten Tag:
 
     [blogpages /blog/ 0 Kaffee]
     [blogpages /blog/ 0 Milch]
     [blogpages /blog/ 0 Beispiel]
-
-Liste mit Seiten anzeigen, veröffentlichte Reihenfolge:
-
-    [blogchanges /blog/ 0]
-    [blogchanges /blog/ 3]
-    [blogchanges /blog/ 10]
-
-Liste mit Seiten anzeigen, veröffentlichte Reihenfolge mit einem bestimmten Tag:
-
-    [blogchanges /blog/ 0 Kaffee]
-    [blogchanges /blog/ 0 Milch]
-    [blogchanges /blog/ 0 Beispiel]
 
 Links zum Blog anzeigen:
 

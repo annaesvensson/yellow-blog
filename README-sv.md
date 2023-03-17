@@ -1,6 +1,6 @@
 <p align="right"><a href="README-de.md">Deutsch</a> &nbsp; <a href="README.md">English</a> &nbsp; <a href="README-sv.md">Svenska</a></p>
 
-# Blog 0.8.23
+# Blog 0.8.24
 
 Blogg för din webbplats
 
@@ -26,15 +26,13 @@ Du kan använda förkortningar för att visa information om bloggen:
 `[blogtags]` för en lista med taggar  
 `[blogyears]` för en lista med år  
 `[blogmonths]` för en lista med månader  
-`[blogrelated]` för en lista med sidor, som är relaterade till den aktuella sidan  
-`[blogpages]` för en lista med sidor, alfabetisk ordning  
-`[blogchanges]` för en lista över sidor, publicerad ordning  
+`[blogpages]` för en lista över sidor, publicerad ordning  
 
-Följande argument är tillgängliga, alla utom det första argumentet är valfria:
+Följande argument är tillgängliga:
 
 `StartLocation` = plats för bloggstartsida  
 `EntriesMax` = antal inlägg att visa per förkortning, 0 för obegränsad  
-`FilterTag` = visa sidor med en specifik tagg, endast `[blogpages]` eller `[blogchanges]`  
+`FilterTag` = visa sidor med en specifik tagg, endast `[blogpages]`  
 
 ## Exempel
 
@@ -77,37 +75,25 @@ Innehållsfil med blogginformation:
     ---
     Title: Översikt
     ---
-    ## År
+    ## Sidor
 
-    [blogyears /blog/ 0]
+    [blogpages]
 
     ## Taggar
 
-    [blogtags /blog/ 0]
+    [blogtags]
 
-Visa lista med sidor, alfabetisk ordning:
+Visa lista med sidor, olika antal inlägg:
 
     [blogpages /blog/ 0]
     [blogpages /blog/ 3]
     [blogpages /blog/ 10]
 
-Visa lista med sidor, alfabetisk ordning med en specifik tagg:
+Visa lista med sidor, med en specifik tagg:
 
     [blogpages /blog/ 0 kaffe]
     [blogpages /blog/ 0 mjölk]
     [blogpages /blog/ 0 exempel]
-
-Visa lista med sidor, publicerad ordning:
-
-    [blogchanges /blog/ 0]
-    [blogchanges /blog/ 3]
-    [blogchanges /blog/ 10]
-
-Visa lista med sidor, publicerad ordning med en specifik tagg:
-
-    [blogchanges /blog/ 0 kaffe]
-    [blogchanges /blog/ 0 mjölk]
-    [blogchanges /blog/ 0 exempel]
 
 Visa länkar till bloggen:
 

@@ -1,6 +1,6 @@
 <p align="right"><a href="README-de.md">Deutsch</a> &nbsp; <a href="README.md">English</a> &nbsp; <a href="README-sv.md">Svenska</a></p>
 
-# Blog 0.8.23
+# Blog 0.8.24
 
 Blog for your website.
 
@@ -26,15 +26,13 @@ You can use shortcuts to show information about the blog:
 `[blogtags]` for a list of tags  
 `[blogyears]` for a list of years  
 `[blogmonths]` for a list of months  
-`[blogrelated]` for a list of pages, related to the current page  
-`[blogpages]` for a list of pages, alphabetic order  
-`[blogchanges]` for a list of pages, published order  
+`[blogpages]` for a list of pages, published order  
 
-The following arguments are available, all but the first argument are optional:
+The following arguments are available:
 
-`StartLocation` = location of blog start page  
+`StartLocation` = location of blog start page, `auto` for automatic detection  
 `EntriesMax` = number of entries to show per shortcut, 0 for unlimited  
-`FilterTag` = show pages with a specific tag, `[blogpages]` or `[blogchanges]` only  
+`FilterTag` = show pages with a specific tag, `[blogpages]` only  
 
 ## Examples
 
@@ -77,37 +75,25 @@ Content file with blog information:
     ---
     Title: Overview
     ---
-    ## Years
+    ## Pages
 
-    [blogyears /blog/ 0]
+    [blogpages]
 
     ## Tags
 
-    [blogtags /blog/ 0]
+    [blogtags]
 
-Showing list of pages, alphabetic order:
+Showing list of pages, different number of entries:
 
     [blogpages /blog/ 0]
     [blogpages /blog/ 3]
     [blogpages /blog/ 10]
 
-Showing list of pages, alphabetic order with a specific tag:
+Showing list of pages, with a specific tag:
 
     [blogpages /blog/ 0 coffee]
     [blogpages /blog/ 0 milk]
     [blogpages /blog/ 0 example]
-
-Showing list of pages, published order:
-
-    [blogchanges /blog/ 0]
-    [blogchanges /blog/ 3]
-    [blogchanges /blog/ 10]
-
-Showing list of pages, published order with a specific tag:
-
-    [blogchanges /blog/ 0 coffee]
-    [blogchanges /blog/ 0 milk]
-    [blogchanges /blog/ 0 example]
 
 Showing links to blog:
 
