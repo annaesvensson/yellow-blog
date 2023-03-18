@@ -2,7 +2,7 @@
 // Blog extension, https://github.com/annaesvensson/yellow-blog
 
 class YellowBlog {
-    const VERSION = "0.8.24";
+    const VERSION = "0.8.25";
     public $yellow;         // access to API
     
     // Handle initialisation
@@ -10,7 +10,7 @@ class YellowBlog {
         $this->yellow = $yellow;
         $this->yellow->system->setDefault("blogStartLocation", "auto");
         $this->yellow->system->setDefault("blogNewLocation", "@title");
-        $this->yellow->system->setDefault("blogEntriesMax", "5");
+        $this->yellow->system->setDefault("blogShortcutEntries", "5");
         $this->yellow->system->setDefault("blogPaginationLimit", "5");
     }
     
@@ -32,17 +32,17 @@ class YellowBlog {
     // Return blogauthors shortcut
     public function getShorcutBlogauthors($page, $name, $text) {
         $output = null;
-        list($startLocation, $entriesMax) = $this->yellow->toolbox->getTextArguments($text);
+        list($startLocation, $shortcutEntries) = $this->yellow->toolbox->getTextArguments($text);
         if (is_string_empty($startLocation)) $startLocation = $this->yellow->system->get("blogStartLocation");
-        if (is_string_empty($entriesMax)) $entriesMax = $this->yellow->system->get("blogEntriesMax");
+        if (is_string_empty($shortcutEntries)) $shortcutEntries = $this->yellow->system->get("blogShortcutEntries");
         $blogStart = $this->getBlogStart($page, $startLocation);
         if (!is_null($blogStart)) {
             $pages = $this->getBlogPages($blogStart);
             $page->setLastModified($pages->getModified());
             $authors = $this->getMeta($pages, "author");
-            if ($entriesMax!=0 && count($authors)>$entriesMax) {
+            if ($shortcutEntries!=0 && count($authors)>$shortcutEntries) {
                 uasort($authors, "strnatcasecmp");
-                $authors = array_slice($authors, -$entriesMax, $entriesMax, true);
+                $authors = array_slice($authors, -$shortcutEntries, $shortcutEntries, true);
             }
             uksort($authors, "strnatcasecmp");
             $output = "<div class=\"".htmlspecialchars($name)."\">\n";
@@ -62,17 +62,17 @@ class YellowBlog {
     // Return blogtags shortcut
     public function getShorcutBlogtags($page, $name, $text) {
         $output = null;
-        list($startLocation, $entriesMax) = $this->yellow->toolbox->getTextArguments($text);
+        list($startLocation, $shortcutEntries) = $this->yellow->toolbox->getTextArguments($text);
         if (is_string_empty($startLocation)) $startLocation = $this->yellow->system->get("blogStartLocation");
-        if (is_string_empty($entriesMax)) $entriesMax = $this->yellow->system->get("blogEntriesMax");
+        if (is_string_empty($shortcutEntries)) $shortcutEntries = $this->yellow->system->get("blogShortcutEntries");
         $blogStart = $this->getBlogStart($page, $startLocation);
         if (!is_null($blogStart)) {
             $pages = $this->getBlogPages($blogStart);
             $page->setLastModified($pages->getModified());
             $tags = $this->getMeta($pages, "tag");
-            if ($entriesMax!=0 && count($tags)>$entriesMax) {
+            if ($shortcutEntries!=0 && count($tags)>$shortcutEntries) {
                 uasort($tags, "strnatcasecmp");
-                $tags = array_slice($tags, -$entriesMax, $entriesMax, true);
+                $tags = array_slice($tags, -$shortcutEntries, $shortcutEntries, true);
             }
             uksort($tags, "strnatcasecmp");
             $output = "<div class=\"".htmlspecialchars($name)."\">\n";
@@ -92,15 +92,15 @@ class YellowBlog {
     // Return blogyears shortcut
     public function getShorcutBlogyears($page, $name, $text) {
         $output = null;
-        list($startLocation, $entriesMax) = $this->yellow->toolbox->getTextArguments($text);
+        list($startLocation, $shortcutEntries) = $this->yellow->toolbox->getTextArguments($text);
         if (is_string_empty($startLocation)) $startLocation = $this->yellow->system->get("blogStartLocation");
-        if (is_string_empty($entriesMax)) $entriesMax = $this->yellow->system->get("blogEntriesMax");
+        if (is_string_empty($shortcutEntries)) $shortcutEntries = $this->yellow->system->get("blogShortcutEntries");
         $blogStart = $this->getBlogStart($page, $startLocation);
         if (!is_null($blogStart)) {
             $pages = $this->getBlogPages($blogStart);
             $page->setLastModified($pages->getModified());
             $years = $this->getYears($pages, "published");
-            if ($entriesMax!=0) $years = array_slice($years, -$entriesMax, $entriesMax, true);
+            if ($shortcutEntries!=0) $years = array_slice($years, -$shortcutEntries, $shortcutEntries, true);
             uksort($years, "strnatcasecmp");
             $years = array_reverse($years, true);
             $output = "<div class=\"".htmlspecialchars($name)."\">\n";
@@ -120,15 +120,15 @@ class YellowBlog {
     // Return blogmonths shortcut
     public function getShorcutBlogmonths($page, $name, $text) {
         $output = null;
-        list($startLocation, $entriesMax) = $this->yellow->toolbox->getTextArguments($text);
+        list($startLocation, $shortcutEntries) = $this->yellow->toolbox->getTextArguments($text);
         if (is_string_empty($startLocation)) $startLocation = $this->yellow->system->get("blogStartLocation");
-        if (is_string_empty($entriesMax)) $entriesMax = $this->yellow->system->get("blogEntriesMax");
+        if (is_string_empty($shortcutEntries)) $shortcutEntries = $this->yellow->system->get("blogShortcutEntries");
         $blogStart = $this->getBlogStart($page, $startLocation);
         if (!is_null($blogStart)) {
             $pages = $this->getBlogPages($blogStart);
             $page->setLastModified($pages->getModified());
             $months = $this->getMonths($pages, "published");
-            if ($entriesMax!=0) $months = array_slice($months, -$entriesMax, $entriesMax, true);
+            if ($shortcutEntries!=0) $months = array_slice($months, -$shortcutEntries, $shortcutEntries, true);
             uksort($months, "strnatcasecmp");
             $months = array_reverse($months, true);
             $output = "<div class=\"".htmlspecialchars($name)."\">\n";
@@ -148,16 +148,16 @@ class YellowBlog {
     // Return blogpages shortcut
     public function getShorcutBlogpages($page, $name, $text) {
         $output = null;
-        list($startLocation, $entriesMax, $filterTag) = $this->yellow->toolbox->getTextArguments($text);
+        list($startLocation, $shortcutEntries, $filterTag) = $this->yellow->toolbox->getTextArguments($text);
         if (is_string_empty($startLocation)) $startLocation = $this->yellow->system->get("blogStartLocation");
-        if (is_string_empty($entriesMax)) $entriesMax = $this->yellow->system->get("blogEntriesMax");
+        if (is_string_empty($shortcutEntries)) $shortcutEntries = $this->yellow->system->get("blogShortcutEntries");
         $blogStart = $this->getBlogStart($page, $startLocation);
         if (!is_null($blogStart)) {
             $pages = $this->getBlogPages($blogStart);
             $page->setLastModified($pages->getModified());
             if (!is_string_empty($filterTag)) $pages->filter("tag", $filterTag);
             $pages->sort("published", false);
-            if ($entriesMax!=0) $pages->limit($entriesMax);
+            if ($shortcutEntries!=0) $pages->limit($shortcutEntries);
             $output = "<div class=\"".htmlspecialchars($name)."\">\n";
             $output .= "<ul>\n";
             foreach ($pages as $pageBlog) {

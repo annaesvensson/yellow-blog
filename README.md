@@ -1,6 +1,6 @@
 <p align="right"><a href="README-de.md">Deutsch</a> &nbsp; <a href="README.md">English</a> &nbsp; <a href="README-sv.md">Svenska</a></p>
 
-# Blog 0.8.24
+# Blog 0.8.25
 
 Blog for your website.
 
@@ -31,7 +31,7 @@ You can use shortcuts to show information about the blog:
 The following arguments are available:
 
 `StartLocation` = location of blog start page, `auto` for automatic detection  
-`EntriesMax` = number of entries to show per shortcut, 0 for unlimited  
+`ShortcutEntries` = number of entries to show per shortcut, 0 for unlimited  
 `FilterTag` = show pages with a specific tag, `[blogpages]` only  
 
 ## Examples
@@ -124,7 +124,7 @@ The following settings can be configured in file `system/extensions/yellow-syste
 
 `BlogStartLocation` = location of blog start page, `auto` for automatic detection  
 `BlogNewLocation` = location for new blog pages, [supported placeholders](#settings-placeholders)  
-`BlogEntriesMax` = number of entries to show per shortcut, 0 for unlimited  
+`BlogShortcutEntries` = number of entries to show per shortcut, 0 for unlimited  
 `BlogPaginationLimit` = number of entries to show per page, 0 for unlimited  
 
 <a id="settings-placeholders"></a>The following placeholders for new blog pages are supported:

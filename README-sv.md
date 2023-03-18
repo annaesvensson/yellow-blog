@@ -1,6 +1,6 @@
 <p align="right"><a href="README-de.md">Deutsch</a> &nbsp; <a href="README.md">English</a> &nbsp; <a href="README-sv.md">Svenska</a></p>
 
-# Blog 0.8.24
+# Blog 0.8.25
 
 Blogg för din webbplats
 
@@ -31,7 +31,7 @@ Du kan använda förkortningar för att visa information om bloggen:
 Följande argument är tillgängliga:
 
 `StartLocation` = plats för bloggstartsida, `auto` för automatisk detektering  
-`EntriesMax` = antal inlägg att visa per förkortning, 0 för obegränsad  
+`ShortcutEntries` = antal inlägg att visa per förkortning, 0 för obegränsad  
 `FilterTag` = visa sidor med en specifik tagg, endast `[blogpages]`  
 
 ## Exempel
@@ -124,7 +124,7 @@ Följande inställningar kan konfigureras i filen `system/extensions/yellow-syst
 
 `BlogStartLocation` = plats för bloggstartsida, `auto` för automatisk detektering  
 `BlogNewLocation` = plats för nya bloggsidor, [stödda platshållare](#inställningar-placeholders)  
-`BlogEntriesMax` = antal inlägg att visa per förkortning, 0 för obegränsad  
+`BlogShortcutEntries` = antal inlägg att visa per förkortning, 0 för obegränsad  
 `BlogPaginationLimit` = antal inlägg att visa per sida, 0 för obegränsad  
 
 <a id="inställningar-placeholders"></a>Följande platshållare för nya bloggsidor stöds:

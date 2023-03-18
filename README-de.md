@@ -1,6 +1,6 @@
 <p align="right"><a href="README-de.md">Deutsch</a> &nbsp; <a href="README.md">English</a> &nbsp; <a href="README-sv.md">Svenska</a></p>
 
-# Blog 0.8.24
+# Blog 0.8.25
 
 Blog für deine Webseite.
 
@@ -31,7 +31,7 @@ Du kannst Abkürzungen verwenden, um Informationen über das Blog anzuzeigen:
 Die folgenden Argumente sind verfügbar:
 
 `StartLocation` = Ort der Blogstartseite, `auto` für automatische Erkennung  
-`EntriesMax` = Anzahl der Einträge pro Abkürzung, 0 für unbegrenzt  
+`ShortcutEntries` = Anzahl der Einträge pro Abkürzung, 0 für unbegrenzt  
 `FilterTag` = Seiten mit bestimmten Tag anzeigen, nur bei `[blogpages]`  
 
 ## Beispiele
@@ -124,7 +124,7 @@ Die folgenden Einstellungen können in der Datei `system/extensions/yellow-syste
 
 `BlogStartLocation` = Ort der Blogstartseite, `auto` für automatische Erkennung  
 `BlogNewLocation` = Ort für neue Blogseiten, [unterstützte Platzhalter](#einstellungen-placeholders)  
-`BlogEntriesMax` = Anzahl der Einträge pro Abkürzung, 0 für unbegrenzt  
+`BlogShortcutEntries` = Anzahl der Einträge pro Abkürzung, 0 für unbegrenzt  
 `BlogPaginationLimit` = Anzahl der Einträge pro Seite, 0 für unbegrenzt 
 
 <a id="einstellungen-placeholders"></a>Die folgenden Platzhalter für neue Blogseiten werden unterstützt:
