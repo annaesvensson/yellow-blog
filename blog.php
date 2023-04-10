@@ -2,7 +2,7 @@
 // Blog extension, https://github.com/annaesvensson/yellow-blog
 
 class YellowBlog {
-    const VERSION = "0.8.25";
+    const VERSION = "0.8.26";
     public $yellow;         // access to API
     
     // Handle initialisation
@@ -153,7 +153,7 @@ class YellowBlog {
         if (is_string_empty($shortcutEntries)) $shortcutEntries = $this->yellow->system->get("blogShortcutEntries");
         $blogStart = $this->getBlogStart($page, $startLocation);
         if (!is_null($blogStart)) {
-            $pages = $this->getBlogPages($blogStart);
+            $pages = $this->getBlogPages($blogStart)->remove($page);
             $page->setLastModified($pages->getModified());
             if (!is_string_empty($filterTag)) $pages->filter("tag", $filterTag);
             $pages->sort("published", false);
