@@ -10,7 +10,7 @@ class YellowBlog {
         $this->yellow = $yellow;
         $this->yellow->system->setDefault("blogStartLocation", "auto");
         $this->yellow->system->setDefault("blogNewLocation", "@title");
-        $this->yellow->system->setDefault("blogShortcutEntries", "5");
+        $this->yellow->system->setDefault("blogShortcutEntries", "0");
         $this->yellow->system->setDefault("blogPaginationLimit", "5");
     }
     

@@ -16,7 +16,7 @@ Bloggen finns tillgänglig på din webbplats som `http://website/blog/`. För at
 
 ## Hur man redigerar en blogg
 
-Om du vill redigera bloggsidor i en [webbläsare](https://github.com/annaesvensson/yellow-edit/tree/main/README-sv.md) kan du göra detta på din webbplats på `http://website/edit/blog/`. Om du vill redigera bloggsidor på din [dator](https://github.com/annaesvensson/yellow-core/tree/main/README-sv.md), ta en titt på `content/2-blog` mappen. Här är några tips. Prefix och suffix tas bort från adressen, så att det ser bättre ut. Mappen `content/2-blog` är tillgänglig på din webbplats som `http://website/blog/`. Filen `content/2-blog/2020-04-07-blog-example.md` är tillgänglig på din webbplats som `http://website/blog/blog-example`.
+Om du vill redigera bloggsidor i en [webbläsare](https://github.com/annaesvensson/yellow-edit/tree/main/README-sv.md) kan du göra detta på din webbplats på `http://website/edit/blog/`. Om du vill redigera bloggsidor på din [dator](https://github.com/annaesvensson/yellow-core/tree/main/README-sv.md), ta en titt på `content/2-blog` mappen. Här är några tips. Högst upp på en sida kan du ändra `Title` och andra [sidinställningar](https://github.com/annaesvensson/yellow-core/tree/main/README-sv.md#inställningar-page). Nedan kan du ändra text och bilder. [Läs mer om textformatering](https://datenstrom.se/sv/yellow/help/how-to-change-the-content).
 
 ## Hur man visar blogginformation
 

@@ -16,7 +16,7 @@ Das Blog ist auf deiner Webseite vorhanden als `http://website/blog/`. Um eine n
 
 ## Wie man ein Blog bearbeitet
 
-Falls du Blogseiten im [Webbrowser](https://github.com/annaesvensson/yellow-edit/tree/main/README-de.md) bearbeiten möchtest, kannst du das auf deiner Webseite machen unter `http://website/edit/blog/`. Falls du Blogseiten auf deinem [Computer](https://github.com/annaesvensson/yellow-core/tree/main/README-de.md) bearbeiten möchtest, schau dir das `content/2-blog`-Verzeichnis an. Hier sind ein paar Tipps. Präfixe und Suffixe werden aus der Adresse entfernt, damit es besser aussieht. Das Verzeichnis `content/2-blog` ist vorhanden als `http://website/blog/`. Die Datei `content/2-blog/2020-04-07-blog-example.md` ist vorhanden als `http://website/blog/blog-example`.
+Falls du Blogseiten im [Webbrowser](https://github.com/annaesvensson/yellow-edit/tree/main/README-de.md) bearbeiten möchtest, kannst du das auf deiner Webseite machen unter `http://website/edit/blog/`. Falls du Blogseiten auf deinem [Computer](https://github.com/annaesvensson/yellow-core/tree/main/README-de.md) bearbeiten möchtest, schau dir das `content/2-blog`-Verzeichnis an. Hier sind ein paar Tipps. Ganz oben auf einer Seite kannst du `Title` und andere [Seiteneinstellungen](https://github.com/annaesvensson/yellow-core/tree/main/README-de.md#einstellungen-seite) ändern. Darunter kannst du Text und Bilder ändern. [Weitere Informationen zu Textformatierung](https://datenstrom.se/de/yellow/help/how-to-change-the-content).
 
 ## Wie man Bloginformationen anzeigt
 
