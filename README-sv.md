@@ -39,13 +39,13 @@ Följande argument är tillgängliga:
 Innehållsfil för bloggen:
 
     ---
-    Title: Blogg exempel 
+    Title: Blogg exempelsida
     Published: 2020-04-07
     Author: Datenstrom
     Layout: blog
     Tag: Exempel
     ---
-    Detta är ett exempel på en bloggsida.
+    Detta är en exempelsida.
 
     Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut 
     labore et dolore magna pizza. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 

@@ -1,5 +1,5 @@
 ---
-Title: Blog example
+Title: Blog example page
 Published: 2020-04-07
 Author: Datenstrom
 Layout: blog
