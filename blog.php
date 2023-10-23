@@ -2,7 +2,7 @@
 // Blog extension, https://github.com/annaesvensson/yellow-blog
 
 class YellowBlog {
-    const VERSION = "0.8.26";
+    const VERSION = "0.8.27";
     public $yellow;         // access to API
     
     // Handle initialisation
@@ -135,7 +135,7 @@ class YellowBlog {
             $output .= "<ul>\n";
             foreach ($months as $key=>$value) {
                 $output .= "<li><a href=\"".$blogStart->getLocation(true).$this->yellow->lookup->normaliseArguments("published:$key")."\">";
-                $output .= htmlspecialchars($this->yellow->language->normaliseDate($key))."</a></li>\n";
+                $output .= htmlspecialchars($this->yellow->lookup->normaliseDate($key))."</a></li>\n";
             }
             $output .= "</ul>\n";
             $output .= "</div>\n";
@@ -187,7 +187,7 @@ class YellowBlog {
             }
             if ($page->isRequest("published")) {
                 $pages->filter("published", $page->getRequest("published"), false);
-                array_push($pagesFilter, $this->yellow->language->normaliseDate($pages->getFilter()));
+                array_push($pagesFilter, $this->yellow->lookup->normaliseDate($pages->getFilter()));
             }
             $pages->sort("published", false);
             if (!is_array_empty($pagesFilter)) {
