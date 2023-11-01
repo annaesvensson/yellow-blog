@@ -2,7 +2,7 @@
 // Blog extension, https://github.com/annaesvensson/yellow-blog
 
 class YellowBlog {
-    const VERSION = "0.8.29";
+    const VERSION = "0.8.30";
     public $yellow;         // access to API
     
     // Handle initialisation
@@ -19,18 +19,18 @@ class YellowBlog {
         $output = null;
         if (substru($name, 0, 4)=="blog" && ($type=="block" || $type=="inline")) {
             switch($name) {
-                case "blogauthors": $output = $this->getShorcutBlogauthors($page, $name, $text); break;
-                case "blogtags":    $output = $this->getShorcutBlogtags($page, $name, $text); break;
-                case "blogyears":   $output = $this->getShorcutBlogyears($page, $name, $text); break;
-                case "blogmonths":  $output = $this->getShorcutBlogmonths($page, $name, $text); break;
-                case "blogpages":   $output = $this->getShorcutBlogpages($page, $name, $text); break;
+                case "blogauthors": $output = $this->getShortcutBlogauthors($page, $name, $text); break;
+                case "blogtags":    $output = $this->getShortcutBlogtags($page, $name, $text); break;
+                case "blogyears":   $output = $this->getShortcutBlogyears($page, $name, $text); break;
+                case "blogmonths":  $output = $this->getShortcutBlogmonths($page, $name, $text); break;
+                case "blogpages":   $output = $this->getShortcutBlogpages($page, $name, $text); break;
             }
         }
         return $output;
     }
         
     // Return blogauthors shortcut
-    public function getShorcutBlogauthors($page, $name, $text) {
+    public function getShortcutBlogauthors($page, $name, $text) {
         $output = null;
         list($startLocation, $shortcutEntries) = $this->yellow->toolbox->getTextArguments($text);
         if (is_string_empty($startLocation)) $startLocation = $this->yellow->system->get("blogStartLocation");
@@ -57,7 +57,7 @@ class YellowBlog {
     }
     
     // Return blogtags shortcut
-    public function getShorcutBlogtags($page, $name, $text) {
+    public function getShortcutBlogtags($page, $name, $text) {
         $output = null;
         list($startLocation, $shortcutEntries) = $this->yellow->toolbox->getTextArguments($text);
         if (is_string_empty($startLocation)) $startLocation = $this->yellow->system->get("blogStartLocation");
@@ -84,7 +84,7 @@ class YellowBlog {
     }
 
     // Return blogyears shortcut
-    public function getShorcutBlogyears($page, $name, $text) {
+    public function getShortcutBlogyears($page, $name, $text) {
         $output = null;
         list($startLocation, $shortcutEntries) = $this->yellow->toolbox->getTextArguments($text);
         if (is_string_empty($startLocation)) $startLocation = $this->yellow->system->get("blogStartLocation");
@@ -110,7 +110,7 @@ class YellowBlog {
     }
     
     // Return blogmonths shortcut
-    public function getShorcutBlogmonths($page, $name, $text) {
+    public function getShortcutBlogmonths($page, $name, $text) {
         $output = null;
         list($startLocation, $shortcutEntries) = $this->yellow->toolbox->getTextArguments($text);
         if (is_string_empty($startLocation)) $startLocation = $this->yellow->system->get("blogStartLocation");
@@ -136,7 +136,7 @@ class YellowBlog {
     }
     
     // Return blogpages shortcut
-    public function getShorcutBlogpages($page, $name, $text) {
+    public function getShortcutBlogpages($page, $name, $text) {
         $output = null;
         list($startLocation, $shortcutEntries, $filterTag) = $this->yellow->toolbox->getTextArguments($text);
         if (is_string_empty($startLocation)) $startLocation = $this->yellow->system->get("blogStartLocation");
