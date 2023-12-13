@@ -133,6 +133,7 @@ The following settings can be configured in file `system/extensions/yellow-syste
 `@author` = page author  
 `@tag` = page tag for categorisation  
 `@timestamp` = page publication date as timestamp  
+`@datetime` = page publication date, YYYY-MM-DD HH:MM:SS format  
 `@date` = page publication date, YYYY-MM-DD format  
 `@year` = page publication year  
 `@month` = page publication month  

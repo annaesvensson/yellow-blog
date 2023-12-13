@@ -133,6 +133,7 @@ Die folgenden Einstellungen können in der Datei `system/extensions/yellow-syste
 `@author` = Autor der Seite  
 `@tag` = Tag zur Kategorisierung der Seite  
 `@timestamp` = Veröffentlichungsdatum der Seite als Zeitstempel  
+`@datetime` = Veröffentlichungsdatum der Seite, JJJJ-MM-TT SS:MM:SS Format  
 `@date` = Veröffentlichungsdatum der Seite, JJJJ-MM-TT Format  
 `@year` = Veröffentlichungsjahr der Seite  
 `@month` = Veröffentlichungsmonat der Seite  

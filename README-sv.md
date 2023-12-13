@@ -133,6 +133,7 @@ Följande inställningar kan konfigureras i filen `system/extensions/yellow-syst
 `@author` = sedans författare  
 `@tag` = taggar för kategorisering av sidan  
 `@timestamp` = sidans publiceringsdatum som tidsstämpel  
+`@datetime` = sidans publiceringsdatum, ÅÅÅÅ-MM-DD TT:MM:SS format  
 `@date` = sidans publiceringsdatum, ÅÅÅÅ-MM-DD format  
 `@year` = sidans publiceringsår  
 `@month` = sidans publiceringsmånad  
