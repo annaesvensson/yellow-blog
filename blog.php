@@ -2,7 +2,7 @@
 // Blog extension, https://github.com/annaesvensson/yellow-blog
 
 class YellowBlog {
-    const VERSION = "0.8.30";
+    const VERSION = "0.8.31";
     public $yellow;         // access to API
     
     // Handle initialisation
@@ -14,8 +14,8 @@ class YellowBlog {
         $this->yellow->system->setDefault("blogPaginationLimit", "5");
     }
     
-    // Handle page content of shortcut
-    public function onParseContentShortcut($page, $name, $text, $type) {
+    // Handle page content element
+    public function onParseContentElement($page, $name, $text, $attributes, $type) {
         $output = null;
         if (substru($name, 0, 4)=="blog" && ($type=="block" || $type=="inline")) {
             switch($name) {
