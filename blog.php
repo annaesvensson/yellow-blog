@@ -2,7 +2,7 @@
 // Blog extension, https://github.com/annaesvensson/yellow-blog
 
 class YellowBlog {
-    const VERSION = "0.8.31";
+    const VERSION = "0.9.1";
     public $yellow;         // access to API
     
     // Handle initialisation
