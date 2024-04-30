@@ -2,7 +2,7 @@
 // Blog extension, https://github.com/annaesvensson/yellow-blog
 
 class YellowBlog {
-    const VERSION = "0.9.1";
+    const VERSION = "0.9.2";
     public $yellow;         // access to API
     
     // Handle initialisation
@@ -10,8 +10,17 @@ class YellowBlog {
         $this->yellow = $yellow;
         $this->yellow->system->setDefault("blogStartLocation", "auto");
         $this->yellow->system->setDefault("blogNewLocation", "@title");
+        $this->yellow->system->setDefault("blogFilePrefix", "1");
         $this->yellow->system->setDefault("blogShortcutEntries", "0");
         $this->yellow->system->setDefault("blogPaginationLimit", "5");
+    }
+    
+    // Handle page meta data
+    public function onParseMetaData($page) {
+        if ($page->get("layout")=="blog") {
+            $page->set("editNewLocation", $this->yellow->system->get("blogNewLocation"));
+            if ($this->yellow->system->get("blogFilePrefix")) $page->set("editNewPrefix", $page->get("published"));
+        }
     }
     
     // Handle page content element
@@ -200,11 +209,6 @@ class YellowBlog {
             }
             $page->setPage("blogStart", $blogStart);
         }
-    }
-    
-    // Handle content file editing
-    public function onEditContentFile($page, $action, $email) {
-        if ($page->get("layout")=="blog") $page->set("editNewLocation", $this->yellow->system->get("blogNewLocation"));
     }
     
     // Return blog start page, null if not found

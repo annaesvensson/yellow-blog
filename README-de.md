@@ -1,6 +1,6 @@
 <p align="right"><a href="README-de.md">Deutsch</a> &nbsp; <a href="README.md">English</a> &nbsp; <a href="README-sv.md">Svenska</a></p>
 
-# Blog 0.9.1
+# Blog 0.9.2
 
 Blog für deine Webseite.
 
@@ -124,6 +124,7 @@ Die folgenden Einstellungen können in der Datei `system/extensions/yellow-syste
 
 `BlogStartLocation` = Ort der Blogstartseite, `auto` für automatische Erkennung  
 `BlogNewLocation` = Ort für neue Blogseiten, [unterstützte Platzhalter](#einstellungen-placeholders)  
+`BlogFilePrefix` = Veröffentlichungsdatum der Seite als numerisches Präfix benutzen, 1 oder 0  
 `BlogShortcutEntries` = Anzahl der Einträge pro Abkürzung, 0 für unbegrenzt  
 `BlogPaginationLimit` = Anzahl der Einträge pro Seite, 0 für unbegrenzt 
 
