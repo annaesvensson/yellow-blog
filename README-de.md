@@ -124,7 +124,7 @@ Die folgenden Einstellungen können in der Datei `system/extensions/yellow-syste
 
 `BlogStartLocation` = Ort der Blogstartseite, `auto` für automatische Erkennung  
 `BlogNewLocation` = Ort für neue Blogseiten, [unterstützte Platzhalter](#einstellungen-placeholders)  
-`BlogFilePrefix` = Veröffentlichungsdatum der Seite als numerisches Präfix benutzen, 1 oder 0  
+`BlogFilePrefix` = Veröffentlichungsdatum als numerisches Präfix benutzen, 1 oder 0  
 `BlogShortcutEntries` = Anzahl der Einträge pro Abkürzung, 0 für unbegrenzt  
 `BlogPaginationLimit` = Anzahl der Einträge pro Seite, 0 für unbegrenzt 
 

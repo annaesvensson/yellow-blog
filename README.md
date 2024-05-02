@@ -124,7 +124,7 @@ The following settings can be configured in file `system/extensions/yellow-syste
 
 `BlogStartLocation` = location of blog start page, `auto` for automatic detection  
 `BlogNewLocation` = location for new blog pages, [supported placeholders](#settings-placeholders)  
-`BlogFilePrefix` = use page publication date as numerical prefix, 1 or 0  
+`BlogFilePrefix` = use publication date as numerical prefix, 1 or 0  
 `BlogShortcutEntries` = number of entries to show per shortcut, 0 for unlimited  
 `BlogPaginationLimit` = number of entries to show per page, 0 for unlimited  
 
