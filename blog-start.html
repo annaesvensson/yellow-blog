@@ -8,7 +8,7 @@
 <?php foreach ($pages as $page): ?>
 <?php $page->set("entryClass", "entry") ?>
 <?php if ($page->isExisting("tag")): ?>
-<?php foreach (preg_split("/\s*,\s*/", $page->get("tag")) as $tag) { $page->set("entryClass", $page->get("entryClass")." tag-".$this->yellow->lookup->normaliseArguments($tag, false)); } ?>
+<?php foreach (preg_split("/\s*,\s*/", $page->get("tag")) as $tag) { $page->set("entryClass", $page->get("entryClass")." tag-".$this->yellow->lookup->normaliseClass($tag)); } ?>
 <?php endif ?>
 <div class="<?php echo $page->getHtml("entryClass") ?>">
 <div class="entry-title"><h1><a href="<?php echo $page->getLocation(true) ?>"><?php echo $page->getHtml("title") ?></a></h1></div>

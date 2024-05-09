@@ -2,7 +2,7 @@
 // Blog extension, https://github.com/annaesvensson/yellow-blog
 
 class YellowBlog {
-    const VERSION = "0.9.2";
+    const VERSION = "0.9.4";
     public $yellow;         // access to API
     
     // Handle initialisation
@@ -244,7 +244,7 @@ class YellowBlog {
         $class = "";
         if ($page->isExisting("tag")) {
             foreach (preg_split("/\s*,\s*/", $page->get("tag")) as $tag) {
-                $class .= " tag-".$this->yellow->lookup->normaliseArguments($tag, false);
+                $class .= " tag-".$this->yellow->lookup->normaliseClass($tag);
             }
         }
         return trim($class);
