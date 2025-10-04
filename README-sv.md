@@ -68,7 +68,7 @@ Innehållsfil för bloggen, med sidbrytning:
     är en så viktig del av vardagen i Sverige att det är både ett verb 
     och ett substantiv. Hur ofta fikar du? [--more--]
 
-    [youtube SUpY1BT9Xf4]
+    [image photo.jpg "Detta är en exempelbild"]
 
 Innehållsfil med blogginformation:
 

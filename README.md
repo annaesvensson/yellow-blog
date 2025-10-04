@@ -68,7 +68,7 @@ Content file for blog, with page break:
     an important part of life in Sweden that it is both a verb and a noun. 
     How often do you fika? [--more--]
 
-    [youtube SUpY1BT9Xf4]
+    [image photo.jpg "This is an example image"]
 
 Content file with blog information:
 

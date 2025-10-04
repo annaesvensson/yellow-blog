@@ -68,7 +68,7 @@ Inhaltsdatei fürs Blog, mit Seitenumbruch:
     schwedischen Alltag, dass es sowohl als Verb als auch als Nomen verwendet  
     wird. Wie oft machst du Fika? [--more--]
 
-    [youtube SUpY1BT9Xf4]
+    [image photo.jpg "Dies ist ein Beispielbild"]
 
 Inhaltsdatei mit Bloginformationen:
 
