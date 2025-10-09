@@ -95,13 +95,13 @@ Showing list of pages, with a specific tag:
     [blogpages /blog/ 0 milk]
     [blogpages /blog/ 0 example]
 
-Showing links to blog:
+Making links to blog:
 
     [See all pages](/blog/)
     [See pages of 2020](/blog/published:2020/)
     [See pages by Datenstrom](/blog/author:datenstrom/)
     [See pages about coffee](/blog/tag:coffee/)
-    [See pages with examples](/blog/tag:example/)
+    [See blog example page](/blog/blog-example-page)
 
 Configuring blog address in the settings, URL is automatically detected:
 
