@@ -1,8 +1,6 @@
-<p align="right"><a href="readme-de.md">Deutsch</a> &nbsp; <a href="readme.md">English</a> &nbsp; <a href="readme-sv.md">Svenska</a></p>
-
 # Blog 0.9.4
 
-Blogg för din webbplats
+Blogg för din webbplats. Utvecklad av Anna Svensson.
 
 <p align="center"><img src="screenshot.png" alt="Skärmdump"></p>
 
@@ -146,6 +144,4 @@ Följande inställningar kan konfigureras i filen `system/extensions/yellow-syst
 `system/layouts/blog.html` = layoutfil för enskild bloggsida  
 `system/layouts/blog-start.html` = layoutfil för bloggstartsida  
 
-## Utvecklare
-
-Anna Svensson. [Få hjälp](https://datenstrom.se/sv/yellow/help/).
+Har du några frågor? [Få hjälp](https://datenstrom.se/sv/yellow/help/).
