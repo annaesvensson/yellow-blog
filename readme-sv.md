@@ -1,4 +1,4 @@
-# Blog 0.9.4
+# Blog 0.9.5
 
 Blogg för din webbplats. Utvecklad av Anna Svensson.
 

@@ -1,4 +1,4 @@
-# Blog 0.9.4
+# Blog 0.9.5
 
 Blog für deine Webseite. Entwickelt von Anna Svensson.
 
