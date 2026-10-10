@@ -2,7 +2,7 @@
 // Blog extension, https://github.com/annaesvensson/yellow-blog
 
 class YellowBlog {
-    const VERSION = "1.0.1";
+    const VERSION = "1.0.2";
     public $yellow;         // access to API
     
     // Handle initialisation
@@ -209,6 +209,21 @@ class YellowBlog {
             }
             $page->setPage("blogStart", $blogStart);
         }
+    }
+    
+    // Handle page extra data
+    public function onParsePageExtra($page, $name) {
+        $output = null;
+        if ($name=="blogNavigation") {
+            $pages = $this->getBlogPages($page->getPage("blogStart"));
+            $pages->sort("published", false);
+            $blogNavigationPrevious = $pages->getPageNext($page);
+            $blogNavigationNext = $pages->getPagePrevious($page);
+            if ($blogNavigationPrevious) $page->setPage("blogNavigationPrevious", $blogNavigationPrevious);
+            if ($blogNavigationNext) $page->setPage("blogNavigationNext", $blogNavigationNext);
+            if ($blogNavigationPrevious!=null || $blogNavigationNext!=null) $output = "available";
+        }
+        return $output;
     }
     
     // Return blog start page, null if not found

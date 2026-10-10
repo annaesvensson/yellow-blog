@@ -1,4 +1,4 @@
-# Blog 1.0.1
+# Blog 1.0.2
 
 Blogg för din webbplats. Utvecklad av Anna Svensson.
 

@@ -1,4 +1,4 @@
-# Blog 1.0.1
+# Blog 1.0.2
 
 Blog for your website. Developed by Anna Svensson.
 
