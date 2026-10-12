@@ -12,9 +12,11 @@ Blog for your website. Developed by Anna Svensson.
 
 The blog is available on your website as `http://website/blog/`. To create a new blog page, add a new file to the blog folder. Set `Published` and other [page settings](https://github.com/annaesvensson/yellow-core#settings-page) at the top of a page. Dates should be written in the format YYYY-MM-DD. The publishing date will be used to sort blog pages. Use `Tag` to group similar pages together. You can use `[--more--]` to add a page break at the desired spot.
 
-## How to edit a blog
-
 If you want to edit blog pages in a [web browser](https://github.com/annaesvensson/yellow-edit), you can do this on your website at `http://website/edit/blog/`. If you want to edit blog pages on your [computer](https://github.com/annaesvensson/yellow-core), have a look inside your `content/3-blog` folder. Here are some tips. At the top of a page you can change `Title` and other [page settings](https://github.com/annaesvensson/yellow-core#settings-page). Below you can change text and images. [Learn more about text formatting](https://datenstrom.se/yellow/help/how-to-change-the-content).
+
+## How to customise a blog
+
+You can customise the appearance of your website with HTML and CSS. The HTML for the  blog start page can be customised in file `system/layouts/blog-start.html`, the CSS can be customised in the current theme. [Learn more about HTML and CSS](https://datenstrom.se/yellow/help/how-to-customise-html-and-css).
 
 ## How to show blog information
 
@@ -141,7 +143,7 @@ The following settings can be configured in file `system/extensions/yellow-syste
 <a id="settings-files"></a>The following files can be customised:
 
 `content/shared/page-new-blog.md` = content file for new blog page  
-`system/layouts/blog.html` = layout file for individual blog page  
 `system/layouts/blog-start.html` = layout file for blog start page  
+`system/layouts/blog.html` = layout file for individual blog page  
 
 Do you have questions? [Get help](https://datenstrom.se/yellow/help/).

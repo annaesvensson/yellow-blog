@@ -12,9 +12,11 @@ Blog für deine Webseite. Entwickelt von Anna Svensson.
 
 Das Blog ist auf deiner Webseite vorhanden als `http://website/blog/`. Um eine neue Blogseite hinzuzufügen, erstelle eine neue Datei im Blogverzeichnis. Ganz oben auf einer Seite kannst du `Published` und andere [Seiteneinstellungen](https://github.com/annaesvensson/yellow-core/tree/main/readme-de.md#einstellungen-seite) festlegen. Datumsangaben erfolgen im Format JJJJ-MM-TT. Das Veröffentlichungsdatum wird zur Sortierung der Blogseiten verwendet. Mit `Tag` kann man ähnliche Seiten gruppieren. Du kannst `[--more--]` benutzen, um an der gewünschten Stelle einen Seitenumbruch zu erzeugen.
 
-## Wie man ein Blog bearbeitet
-
 Falls du Blogseiten im [Webbrowser](https://github.com/annaesvensson/yellow-edit/tree/main/readme-de.md) bearbeiten möchtest, kannst du das auf deiner Webseite machen unter `http://website/edit/blog/`. Falls du Blogseiten auf deinem [Computer](https://github.com/annaesvensson/yellow-core/tree/main/readme-de.md) bearbeiten möchtest, schau dir das `content/3-blog`-Verzeichnis an. Hier sind ein paar Tipps. Ganz oben auf einer Seite kannst du `Title` und andere [Seiteneinstellungen](https://github.com/annaesvensson/yellow-core/tree/main/readme-de.md#einstellungen-seite) ändern. Darunter kannst du Text und Bilder ändern. [Weitere Informationen zu Textformatierung](https://datenstrom.se/de/yellow/help/how-to-change-the-content).
+
+## Wie man ein Blog anpasst
+
+Du kannst das Aussehen deiner Webseite mit HTML und CSS anpassen. Das HTML für die Blogstartseite kann man in der Datei `system/layouts/blog-start.html` anpassen, das CSS kann man im aktuellen Theme anpassen. [Weitere Informationen zu HTML und CSS](https://datenstrom.se/de/yellow/help/how-to-customise-html-and-css).
 
 ## Wie man Bloginformationen anzeigt
 
@@ -141,7 +143,7 @@ Die folgenden Einstellungen können in der Datei `system/extensions/yellow-syste
 <a id="einstellungen-files"></a>Die folgenden Dateien können angepasst werden:
 
 `content/shared/page-new-blog.md` = Inhaltsdatei für neue Blogseite  
-`system/layouts/blog.html` = Layoutdatei für individuelle Blogseite  
 `system/layouts/blog-start.html` = Layoutdatei für die Blogstartseite  
+`system/layouts/blog.html` = Layoutdatei für individuelle Blogseite  
 
 Hast du Fragen? [Hilfe finden](https://datenstrom.se/de/yellow/help/).

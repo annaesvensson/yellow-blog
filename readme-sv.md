@@ -12,9 +12,11 @@ Blogg för din webbplats. Utvecklad av Anna Svensson.
 
 Bloggen finns tillgänglig på din webbplats som `http://website/blog/`. För att skapa en ny bloggsida, lägg till en ny fil i blogg-mappen. Ställ in `Published` och andra [sidinställningar](https://github.com/annaesvensson/yellow-core/tree/main/readme-sv.md#inställningar-page) högst upp på en sida. Datum ska skrivas i formatet ÅÅÅÅ-MM-DD. Publiceringsdatum kommer att användas för att sortera bloggsidor. Använd `Tag` för att gruppera liknande sidor. Du kan använda `[--more--]` för att lägga till en sidbrytning på önskad plats.
 
-## Hur man redigerar en blogg
-
 Om du vill redigera bloggsidor i en [webbläsare](https://github.com/annaesvensson/yellow-edit/tree/main/readme-sv.md) kan du göra detta på din webbplats på `http://website/edit/blog/`. Om du vill redigera bloggsidor på din [dator](https://github.com/annaesvensson/yellow-core/tree/main/readme-sv.md), ta en titt på `content/3-blog` mappen. Här är några tips. Högst upp på en sida kan du ändra `Title` och andra [sidinställningar](https://github.com/annaesvensson/yellow-core/tree/main/readme-sv.md#inställningar-page). Nedan kan du ändra text och bilder. [Läs mer om textformatering](https://datenstrom.se/sv/yellow/help/how-to-change-the-content).
+
+## Hur man anpassar en blogg
+
+Du kan anpassa utseendet på din webbplats med HTML och CSS. HTML för bloggstartsidan kan anpassas i filen `system/layouts/blog-start.html`, CSS kan anpassas i det aktuella temat. [Läs mer om HTML och CSS](https://datenstrom.se/sv/yellow/help/how-to-customise-html-and-css).
 
 ## Hur man visar blogginformation
 
@@ -141,7 +143,7 @@ Följande inställningar kan konfigureras i filen `system/extensions/yellow-syst
 <a id="inställningar-files"></a>Följande filer kan anpassas:
 
 `content/shared/page-new-blog.md` = innehållsfil för ny bloggsida  
-`system/layouts/blog.html` = layoutfil för enskild bloggsida  
 `system/layouts/blog-start.html` = layoutfil för bloggstartsida  
+`system/layouts/blog.html` = layoutfil för enskild bloggsida  
 
 Har du några frågor? [Få hjälp](https://datenstrom.se/sv/yellow/help/).
